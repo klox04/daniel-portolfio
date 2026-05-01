@@ -59,50 +59,72 @@ const activeIndex = ref(0)
 
 const jobs = [
   {
-    role: 'Full-Stack Developer',
-    company: 'Tech Company',
+    role: 'Web Developer | Mobile App Developer (Front-End)',
+    company: 'Infosoft',
     type: '· Full-time',
-    period: '2023 — Present',
+    period: '2024 — Present',
     bullets: [
-      'Built and maintained multiple web applications using Vue 3 and Laravel',
-      'Designed and implemented RESTful APIs consumed by mobile and web clients',
-      'Collaborated closely with design team to deliver pixel-perfect UI components',
-      'Improved application performance by 40% through code refactoring and caching',
+      'Developed and maintained scalable web applications using Vue.js',
+      'Built UI components using Vuetify for consistent and responsive design systems',
+      'Integrated RESTful APIs to connect mobile apps and web with backend services',
+      'Collaborated with designers and backend developers to deliver complete features',
+      'Implemented authentication and security best practices for web applications',
+      'Debugged and resolved technical issues to ensure system stability',
+      'Designed reusable components to speed up development and maintain consistency',
+      'Built dynamic dashboards and data visualizations (e.g., using charts like ApexCharts)',
+      'Developed cross-platform mobile applications using React Native with Expo',
+      'Handled device features such as camera, storage, and notifications via Expo APIs',
     ],
-    tags: ['Vue 3', 'Laravel', 'TypeScript', 'PostgreSQL'],
+    tags: [
+      'Vue2',
+      'React Native',
+      'TypeScript',
+      'JavaScript',
+      'Postman',
+      'Bitbucket',
+      'Vuetify',
+      'Tailwind',
+      'Nuxt2',
+    ],
   },
   {
     role: 'Frontend Developer',
-    company: 'Digital Agency',
-    type: '· Contract',
-    period: '2022 — 2023',
+    company: 'Klan 3D Inc',
+    type: 'Freelance',
+    period: 'Sep 2024 — Dec 2024',
     bullets: [
-      'Developed responsive landing pages and web apps for various clients',
-      'Integrated third-party APIs and payment gateways',
-      'Maintained and improved existing React codebases',
-      'Worked in an agile team with weekly sprints and code reviews',
+      'Developed the user interface for Klan3D based on Figma mockups using Laravel Blade, ensuring pixel-perfect implementation',
+      'Translated Figma designs into responsive web interfaces using Laravel Blade templates',
+      'Built and maintained responsive UI for Klan3D, ensuring compatibility across multiple screen sizes and devices',
+      'Collaborated with designers to accurately implement UI/UX from Figma into functional interfacess',
+      'Optimized layouts and components to ensure consistency and responsiveness across different dimensions',
     ],
-    tags: ['React', 'Next.js', 'Tailwind CSS', 'REST APIs'],
+    tags: ['laravel', 'Blade', 'Github', 'tailwind'],
   },
   {
-    role: 'Junior Web Developer',
-    company: 'Startup Inc.',
+    role: 'Frontend Developer (Intern)',
+    company: 'Infosoft.',
     type: '· Full-time',
-    period: '2021 — 2022',
+    period: 'Feb 2024 — May 2024',
     bullets: [
-      'Assisted in building an e-commerce platform from scratch',
-      'Wrote clean, reusable HTML/CSS/JS components',
-      'Learned and applied version control workflows using Git',
-      'Participated in daily standups and delivered features on schedule',
+      'Contributed to the development and maintenance of responsive web applications for an Australian client using Vue.js for dynamic interfaces',
+      'Collaborated with the development team to build new features, fix bugs, and improve overall application performances',
+      'Gained hands-on experience working with version control systems like Git in a collaborative development environment',
+      'Ensured cross-browser and multi-device compatibility for a seamless user experience',
     ],
-    tags: ['HTML', 'CSS', 'JavaScript', 'PHP'],
+    tags: ['JavaScript', 'Vue', 'Tailwind', 'Bitbucket'],
   },
 ]
 </script>
 
 <style scoped>
-.section-pad { padding: 8rem 2rem; }
-.container { max-width: 1200px; margin: 0 auto; }
+.section-pad {
+  padding: 8rem 2rem;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
 .section-label {
   display: flex;
@@ -110,9 +132,22 @@ const jobs = [
   gap: 1rem;
   margin-bottom: 3rem;
 }
-.label-num { font-size: 0.7rem; color: var(--accent); letter-spacing: 0.1em; }
-.label-line { flex: 0 0 60px; height: 1px; background: var(--border); }
-.label-text { font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-muted); }
+.label-num {
+  font-size: 0.7rem;
+  color: var(--accent);
+  letter-spacing: 0.1em;
+}
+.label-line {
+  flex: 0 0 60px;
+  height: 1px;
+  background: var(--border);
+}
+.label-text {
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
 
 .section-title {
   font-family: var(--font-display);
@@ -122,7 +157,10 @@ const jobs = [
   margin-bottom: 4rem;
   letter-spacing: -0.02em;
 }
-.section-title em { font-style: italic; color: var(--accent); }
+.section-title em {
+  font-style: italic;
+  color: var(--accent);
+}
 
 .timeline {
   max-width: 800px;
@@ -156,7 +194,7 @@ const jobs = [
 .timeline-item:hover .timeline-dot {
   border-color: var(--accent);
   background: var(--accent);
-  box-shadow: 0 0 12px rgba(200,169,110,0.4);
+  box-shadow: 0 0 12px rgba(200, 169, 110, 0.4);
 }
 
 .timeline-connector {
@@ -214,8 +252,14 @@ const jobs = [
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(-8px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .job-bullets {

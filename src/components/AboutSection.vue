@@ -6,20 +6,17 @@
         <span class="label-line"></span>
         <span class="label-text">About</span>
       </div>
-
       <div class="about-grid">
         <div class="about-text">
-          <h2 class="section-title">Crafting digital<br /><em>experiences</em></h2>
+          <h2 class="section-title">About Me<br /><em>experiences</em></h2>
           <p>
-            Hi, I'm Daniel — a full-stack developer passionate about building clean, performant web
-            applications. I focus on writing maintainable code and creating interfaces that feel
-            intuitive and polished.
+            Frontend Web Developer with over 2+ year of experience building responsive, accessible,
+            and user-centric web applications, primarily in the government and public service
+            sector. Proficient in Vue.js, Vuetify, Tailwind CSS, Vuex, and Axios, with a strong
+            understanding of component-based architecture and API integration. Passionate about
+            creating clean, intuitive UIs that improve user experience and streamline digital
+            workflows.
           </p>
-          <p>
-            When I'm not building products, I'm exploring new technologies, contributing to side
-            projects, and continuously leveling up my craft.
-          </p>
-
           <div class="skills-grid">
             <div class="skill-group" v-for="group in skillGroups" :key="group.title">
               <p class="skill-group-title">{{ group.title }}</p>
@@ -31,7 +28,6 @@
             </div>
           </div>
         </div>
-
         <div class="about-visual">
           <div class="avatar-frame">
             <div class="avatar-placeholder">
@@ -50,15 +46,15 @@
 const skillGroups = [
   {
     title: 'Frontend',
-    skills: ['Vue 3 / Nuxt', 'React / Next.js', 'TypeScript', 'Tailwind CSS'],
+    skills: ['Vue / Nuxt', 'React Native', 'TypeScript', 'JavaSript', 'Tailwind CSS', 'Vuetify'],
   },
-  {
-    title: 'Backend',
-    skills: ['Node.js / Express', 'Laravel / PHP', 'PostgreSQL', 'REST APIs'],
-  },
+  // {
+  //   title: 'Backend',
+  //   skills: ['Node.js / Express', 'Laravel / PHP', 'PostgreSQL', 'REST APIs'],
+  // },
   {
     title: 'Tools',
-    skills: ['Git / GitHub', 'Docker', 'Vite', 'Figma'],
+    skills: ['Git', 'Postman', 'Figma', 'Bitbucket'],
   },
 ]
 </script>

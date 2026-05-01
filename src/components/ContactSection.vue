@@ -11,8 +11,8 @@
         <div class="contact-left">
           <h2 class="section-title">Let's work<br /><em>together</em></h2>
           <p class="contact-desc">
-            I'm currently open to new opportunities. Whether you have a project in mind
-            or just want to say hello — my inbox is always open.
+            I'm currently open to new opportunities. Whether you have a project in mind or just want
+            to say hello — my inbox is always open.
           </p>
 
           <div class="contact-links">
@@ -45,7 +45,12 @@
             </div>
             <div class="form-group">
               <label>Message</label>
-              <textarea v-model="form.message" rows="5" placeholder="Tell me about your project..." required></textarea>
+              <textarea
+                v-model="form.message"
+                rows="5"
+                placeholder="Tell me about your project..."
+                required
+              ></textarea>
             </div>
             <button type="submit" class="btn-submit">
               {{ submitted ? '✓ Message Sent' : 'Send Message' }}
@@ -62,15 +67,19 @@
 </template>
 
 <script setup lang="ts">
-import { reactive, ref } from 'vue'
+import { ref } from 'vue'
 
 const submitted = ref(false)
-
-const form = reactive({
-  name: '',
+const form = {
   email: '',
+  name: '',
   message: '',
-})
+}
+// const form = reactive({
+//   name: '',
+//   email: '',
+//   message: '',
+// })
 
 const handleSubmit = () => {
   // Connect to your email service here (e.g. EmailJS, Formspree)
@@ -102,8 +111,13 @@ const contactLinks = [
 </script>
 
 <style scoped>
-.section-pad { padding: 8rem 2rem 4rem; }
-.container { max-width: 1200px; margin: 0 auto; }
+.section-pad {
+  padding: 8rem 2rem 4rem;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
 .section-label {
   display: flex;
@@ -111,9 +125,22 @@ const contactLinks = [
   gap: 1rem;
   margin-bottom: 3rem;
 }
-.label-num { font-size: 0.7rem; color: var(--accent); letter-spacing: 0.1em; }
-.label-line { flex: 0 0 60px; height: 1px; background: var(--border); }
-.label-text { font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-muted); }
+.label-num {
+  font-size: 0.7rem;
+  color: var(--accent);
+  letter-spacing: 0.1em;
+}
+.label-line {
+  flex: 0 0 60px;
+  height: 1px;
+  background: var(--border);
+}
+.label-text {
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
 
 .section-title {
   font-family: var(--font-display);
@@ -123,7 +150,10 @@ const contactLinks = [
   margin-bottom: 1.5rem;
   letter-spacing: -0.02em;
 }
-.section-title em { font-style: italic; color: var(--accent); }
+.section-title em {
+  font-style: italic;
+  color: var(--accent);
+}
 
 .contact-grid {
   display: grid;
@@ -156,8 +186,8 @@ const contactLinks = [
 }
 
 .contact-link:hover {
-  border-color: rgba(200,169,110,0.4);
-  background: rgba(200,169,110,0.04);
+  border-color: rgba(200, 169, 110, 0.4);
+  background: rgba(200, 169, 110, 0.04);
 }
 
 .link-icon {
@@ -224,7 +254,7 @@ const contactLinks = [
 
 .form-group input:focus,
 .form-group textarea:focus {
-  border-color: rgba(200,169,110,0.5);
+  border-color: rgba(200, 169, 110, 0.5);
 }
 
 .form-group input::placeholder,
@@ -266,6 +296,9 @@ const contactLinks = [
 }
 
 @media (max-width: 900px) {
-  .contact-grid { grid-template-columns: 1fr; gap: 3rem; }
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
 }
 </style>
