@@ -61,7 +61,7 @@
     </div>
 
     <footer class="footer">
-      <p>Designed & built by <span>Daniel</span> · {{ new Date().getFullYear() }}</p>
+      <p>built by <span>Daniel</span> · {{ new Date().getFullYear() }}</p>
     </footer>
   </section>
 </template>
