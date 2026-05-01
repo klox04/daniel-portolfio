@@ -237,24 +237,24 @@ const nextSlide = () => {
 
 const projects: Project[] = [
   {
-    title: 'Enterprise Dashboard',
+    title: 'Assistance Portal',
     description:
-      'A data-rich internal management dashboard for a logistics company. Features real-time tracking, reporting modules, and role-based access control.',
-    tags: ['Vue 3', 'Laravel', 'PostgreSQL', 'Chart.js'],
+      'An assistance portal designed to streamline daily record management, replacing manual processes with a fully digital system to improve efficiency, accuracy, and ease of data handling for everyday operations.',
+    tags: ['Vue', 'Laravel', 'PostgreSQL', 'Vuetify', 'Nuxt'],
     nda: true,
     featured: true,
     images: [
       '/image/image.png',
-      '/image/projectimage.png',
-      '/image/registrar.png',
-      // '/image/dashboard-2.png',
-      // '/image/dashboard-3.png',
+      '/image/camiguinayuada.png',
+      '/image/ayuda1.png',
+      '/image/ayuda2.png',
+      '/image/ayuda3.png',
     ],
     highlights: [
-      'Real-time shipment tracking with live map integration',
-      'Role-based access control for admin, manager, and staff',
+      'Enable to sign a paper with e-esignature ',
+      'Role-based access control for admin, supper admin, staff, governor and other deparment',
       'Custom reporting module with exportable PDF/Excel reports',
-      'Built for 500+ daily active users',
+      'handle over 10,000+ daily data records and counting , ensuring scalable performance, reliability, and smooth processing even under heavy system load.',
     ],
   },
   {
@@ -291,7 +291,7 @@ const projects: Project[] = [
       'An appointment scheduling system with calendar sync, SMS/email reminders, and multi-staff management.',
     tags: ['Vue 3', 'Express', 'MySQL', 'Twilio'],
     nda: true,
-    images: [],
+    images: ['/image/camiguinayuda.png'],
     highlights: [
       'Google Calendar sync for real-time availability',
       'Automated SMS and email reminders via Twilio',
