@@ -258,21 +258,26 @@ const projects: Project[] = [
     ],
   },
   {
-    title: 'CRM Platform',
+    title: 'Camiguin System',
     description:
-      'A customer relationship management platform with pipeline tracking, email integrations, and automated follow-up workflows.',
-    tags: ['React', 'Node.js', 'MongoDB', 'Tailwind'],
+      'Built an admin-based rewards system with spin-the-wheel functionality, user and merchant management, QR code kiosk integration, real-time resident statistics, and a custom reporting module with PDF/Excel export.',
+    tags: ['Nuxt', 'Vuetify', 'PostgreSQL', 'Vue', 'Laravel'],
     nda: true,
     featured: true,
     images: [
       '/image/projectimage.png',
+      '/image/reward1.png',
+      '/image/reward2.png',
+      '/image/reward3.png',
       // '/image/crm-2.png',
     ],
     highlights: [
-      'Visual sales pipeline with drag-and-drop kanban board',
-      'Email integration with automated follow-up sequences',
-      'Contact management with activity history tracking',
-      'Dashboard with conversion metrics and revenue forecasting',
+      'Enable administrators to create and manage a spin-the-wheel rewards system ',
+      'Allow administrators to create user accounts and update/reset passwords',
+      'Integrate QR code scanning via kiosk and monitor it by administrators',
+      'Provide statistical dashboards to monitor total registered residents ',
+      'Include a custom reporting module with exportable PDF and Excel reports',
+      'Allow administrators to create and manage merchants for the rewards system',
     ],
   },
   {
@@ -283,7 +288,7 @@ const projects: Project[] = [
     nda: false,
     demo: 'https://your-demo-link.com',
     github: 'https://github.com/daniel/project',
-    images: ['/image/registrar.png'],
+    images: ['/image/barm2.png', '/image/barm1.png'],
   },
   {
     title: 'Booking System',
@@ -291,7 +296,7 @@ const projects: Project[] = [
       'An appointment scheduling system with calendar sync, SMS/email reminders, and multi-staff management.',
     tags: ['Vue 3', 'Express', 'MySQL', 'Twilio'],
     nda: true,
-    images: ['/image/camiguinayuda.png'],
+    images: ['/image/registrar.png'],
     highlights: [
       'Google Calendar sync for real-time availability',
       'Automated SMS and email reminders via Twilio',
